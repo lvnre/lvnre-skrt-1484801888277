@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: lvnre-skrt
+  host: lvnre-skrt
+  disk_quota: 1024M
+  services:
+  - lvnre-skrt-cloudantNoSQLDB
+  - lvnre-skrt-iotf-service
