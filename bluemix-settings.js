@@ -54,7 +54,7 @@ var settings = module.exports = {
     
     //Add the crc library
     functionGlobalContext: {
-		crc:require('crc');
+		crc:require('crc')
 	},
 
     storageModule: require("./couchstorage")
