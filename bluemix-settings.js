@@ -77,6 +77,10 @@ if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
     }
 }
 
+functionGlobalContext: {
+	crc:require('crc');
+}
+
 settings.couchAppname = VCAP_APPLICATION['application_name'];
 
 
