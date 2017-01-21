@@ -50,6 +50,11 @@ var settings = module.exports = {
 
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
+    
+    //Add the crc library
+    functionGlobalContext: {
+		crc:require('crc');
+	},
 
     functionGlobalContext: { },
 
@@ -75,10 +80,6 @@ if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
             }
         }
     }
-}
-
-functionGlobalContext: {
-	crc:require('crc');
 }
 
 settings.couchAppname = VCAP_APPLICATION['application_name'];
